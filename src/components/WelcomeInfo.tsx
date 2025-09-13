@@ -26,7 +26,7 @@ export const WelcomeInfo = () => {
                 variants={containerVariants}
                 initial="hidden"
                 animate="visible"
-                className="text-lg tect-center leading-relaxed text-gray-800"
+                className="text-lg text-center leading-relaxed text-gray-800"
             >
                 {text.split(" ").map((word, i) => (
                     <motion.span

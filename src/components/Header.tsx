@@ -9,10 +9,10 @@ export const Header = () => {
     const [visible, setVisible] = useState(false);
 
     return (
-        <header className="border-y-2 border-gray-200 py-2">
+        <header className="border-y-2 border-gray-200 py-2 max-[512px]:px-4">
             <Container className="flex items-center max-[512px]:justify-between">
                 <Link to={"/"}>
-                    <img src={Logo} className="w-40 h-fit" alt="logo" />
+                    <img src={Logo} className="w-40 h-fit max-[512px]:w-30" alt="logo" />
                 </Link>
 
                 <div className="max-[512px]:hidden flex gap-4 ml-auto">

@@ -1,0 +1,12 @@
+.custom-slider .p-slider-range {
+    background: #29b56e !important;
+}
+
+/* "ползунок" */
+.custom-slider .p-slider-handle {
+    border: 2px solid #29b56e !important;
+    background: #29b56e !important;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+}

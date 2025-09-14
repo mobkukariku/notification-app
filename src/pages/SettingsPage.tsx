@@ -13,7 +13,6 @@ export default function SettingsPage() {
             <Container className={"max-w-lg mx-auto mt-10"}>
                 <EventManageSettings />
                 <HumorControl />
-                {/*<PushPromptSettings/>*/}
                 <ToneOfVoiceList />
             </Container>
         </>

@@ -14,7 +14,7 @@ export function ApplyInfo({ product,  description }: ApplyInfoProps) {
 
 
     return (
-        <div className="min-h-screen bg-gray-50 flex items-start justify-center py-16">
+        <div className="min-h-screen bg-gray-50 flex items-start justify-center py-10">
             <Container className="max-w-md w-full">
                 <h2 className="font-semibold text-center text-3xl text-[#29b56e] mb-10">
                     Оформление продукта

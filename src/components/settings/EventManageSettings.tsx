@@ -10,12 +10,12 @@ type Event = {
 };
 
 const CATEGORIES = [
+    "Спорт",
     "Одежда и обувь",
     "Продукты питания",
     "Кафе и рестораны",
     "Медицина",
     "Авто",
-    "Спорт",
     "Развлечения",
     "АЗС",
     "Кино",
@@ -38,7 +38,7 @@ const CATEGORIES = [
 
 export function EventManageSettings() {
     const [events, setEvents] = useState<Event[]>([]);
-    const [newEvent, setNewEvent] = useState("");
+    const [newEvent, setNewEvent] = useState("Кайрат против Реал");
     const [category, setCategory] = useState(CATEGORIES[0]);
 
     const addEvent = () => {
@@ -59,7 +59,7 @@ export function EventManageSettings() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.25, delay: 0.2 }}
-            className="max-w-lg mx-auto bg-white my-5 border border-gray-300 rounded-2xl p-6">
+            className=" bg-white my-5 border border-gray-300 rounded-2xl p-6">
             <h2 className="text-xl font-bold mb-4">Какие события вас интересуют?</h2>
 
             <ul className="space-y-3 mb-6">

@@ -3,3 +3,8 @@
 body {
     background-color: #f7fafc;
 }
+
+:root {
+    --primary-color: #f97316; /* оранжевый */
+    --primary-hover-color: #ea580c;
+}

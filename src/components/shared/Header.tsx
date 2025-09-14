@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Container } from "./Container.tsx";
-import Logo from "../assets/logo.svg";
+import Logo from "../../assets/logo.svg";
 import { Home, Settings, Menu } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Sidebar } from "primereact/sidebar";

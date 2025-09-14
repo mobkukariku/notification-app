@@ -1,8 +1,8 @@
 import { Slider } from "primereact/slider";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Container } from "./Container.tsx";
-import "../styles/custom.css"
+import { Container } from "../shared/Container.tsx";
+import "../../styles/custom.css"
 
 export function HumorControl() {
     const [humor, setHumor] = useState<number>(50);
@@ -14,7 +14,7 @@ export function HumorControl() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -10 }}
                 transition={{ duration: 0.25, delay: 0.4 }}
-                className="p-6 border w-full mx-auto max-w-lg border-gray-300 rounded-2xl bg-white">
+                className="p-6 border w-full mx-auto border-gray-300 rounded-2xl bg-white">
                 <h2 className="text-xl font-semibold mb-4">
                     Регулировка уровня юмора
                 </h2>
@@ -35,7 +35,7 @@ export function HumorControl() {
                 <button
                     className="w-full bg-[#29B56E] mt-10 text-white py-2 rounded-lg hover:bg-green-600 cursor-pointer transition"
                 >
-                    Добавить событие
+                    Сохранить
                 </button>
             </motion.div>
         </Container>

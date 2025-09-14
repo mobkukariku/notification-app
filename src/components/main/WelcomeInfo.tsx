@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Container } from "./Container.tsx";
+import { Container } from "../shared/Container.tsx";
 
 const containerVariants = {
     hidden: { opacity: 0 },
@@ -21,7 +21,7 @@ export const WelcomeInfo = () => {
         "Наша система анализирует ваши расходы и финансовое поведение, чтобы предлагать именно те продукты и услуги, которые принесут вам реальную выгоду. Больше никаких общих рассылок — только персонализированные рекомендации.";
 
     return (
-        <Container className={" mt-20"}>
+        <Container className={" mt-50"}>
             <motion.div
                 variants={containerVariants}
                 initial="hidden"

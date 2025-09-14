@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Search } from "lucide-react";
-import { CardSkeleton } from "./skeleton/CardSkeleton.tsx";
-import { Container } from "./Container.tsx";
+import { CardSkeleton } from "../skeleton/CardSkeleton.tsx";
+import { Container } from "../shared/Container.tsx";
 import { CardNotFound } from "./CardNotFound.tsx";
 import { motion, AnimatePresence } from "framer-motion";
 import {CardItem} from "./CardItem.tsx";

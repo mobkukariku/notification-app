@@ -1,29 +1,20 @@
 import { AnimatePresence, motion } from "framer-motion";
 import Logo from "../../assets/app-icon.svg";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 
 export function PhoneNotifications() {
     const [expanded, setExpanded] = useState(false);
-    const navigate = useNavigate();
-
-    let timer: number;
-    let longPress = false;
-
-    const handlePressStart = () => {
-        longPress = false;
-        timer = window.setTimeout(() => {
-            setExpanded(true);
-            longPress = true;
-        }, 500);
-    };
-
-    const handlePressEnd = () => {
-        clearTimeout(timer);
-        if (!longPress) {
-            navigate("/apply");
+    const navigate  = useNavigate();
+    const handleClick = () => {
+        if(expanded){
+            navigate('/apply');
         }
-    };
+
+        setExpanded(!expanded);
+
+
+    }
 
     return (
         <div className="relative">
@@ -43,10 +34,7 @@ export function PhoneNotifications() {
 
             <motion.div
                 className="relative z-20 flex flex-col bg-black/30 rounded-3xl backdrop-blur-sm p-4 my-4 overflow-hidden"
-                onMouseDown={handlePressStart}
-                onMouseUp={handlePressEnd}
-                onTouchStart={handlePressStart}
-                onTouchEnd={handlePressEnd}
+                onClick={handleClick}
                 animate={{
                     scale: expanded ? 1.02 : 1,
                     height: expanded ? 180 : 80
